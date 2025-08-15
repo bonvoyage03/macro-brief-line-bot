@@ -23,5 +23,5 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t ghcr.io/${{ toLower(github.repository) }}/macro-brief-line-bot:latest .
-          docker push ghcr.io/${{ toLower(github.repository) }}/macro-brief-line-bot:latest
+          docker build -t ghcr.io/${{ github.repository }}/macro-brief-line-bot:latest .
+          docker push ghcr.io/${{ github.repository }}/macro-brief-line-bot:latest
