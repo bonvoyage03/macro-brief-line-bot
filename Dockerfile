@@ -17,7 +17,7 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy app
-COPY app/ ./
+COPY app/ ./app/
 
 # Default command for CronJob
 CMD ["python", "-m", "app.main"]
