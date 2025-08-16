@@ -80,7 +80,7 @@ kind: CronJob
 metadata:
   name: macro-brief-line-bot
 spec:
-  schedule: "30 23 * * 0-4" # 08:30 JST ~= 23:30 UTC (adjust for your cluster TZ)
+  schedule: "30 23 * * 1-5" # 08:30 JST ~= 23:30 UTC (adjust for your cluster TZ)
   jobTemplate:
     spec:
       template:
