@@ -45,6 +45,7 @@ def summarize_with_openai(prompt_messages: List[Dict[str, Any]]) -> str:
     resp = client.responses.create(
         model=model,
         input=prompt_messages,
+        tools=[{"type": "web_search"}],
     )
     # SDK v1: convenient accessor
     try:
