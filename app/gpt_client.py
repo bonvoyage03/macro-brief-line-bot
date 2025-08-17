@@ -23,11 +23,12 @@ def build_prompt() -> List[Dict[str, Any]]:
         including aspects such as interest rates, monetary policies, inflation indicators, supply/demand flows, geopolitical events, and other relevant developments recently.
 
         [Output Requirements]
+        - At first, summarize the 1-3 most important news from the last 24 hours.
         - In Japanese, format the summary with a headline followed by bullet points organized under these categories: "Interest Rates and Monetary Policy", "Inflation", "USD & Interest Rate Trends", "Supply/Demand/Flows (ETF/Central Bank/Speculative)", and "Geopolitics & Other".
         - List items in order of significance.
-        - Each bullet point should consist of 1–2 lines, and where possible, add a brief note (prefixed by an asterisk) regarding the implications for gold.
+        - Each bullet point should consist of some lines, and where possible, add a brief note (prefixed by an asterisk) regarding the implications for gold.
         - At the end, if there are any notable events or indicators (Japan time), include them with schedule information.
-        - The summary should be approximately 500–900 characters in length.
+        - The summary should be approximately 500–1200 characters in length.
         - Do not include any hyperlinks.
         - No markdown formatting.
         """
