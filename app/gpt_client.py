@@ -49,6 +49,7 @@ def summarize_with_openai(prompt_messages: List[Dict[str, Any]]) -> str:
     )
     # SDK v1: convenient accessor
     try:
+        logging.info(f"Used tokens: {resp.usage.total_tokens}")
         return resp.output_text
     except Exception:
         # Fallback: stitch text from content parts
